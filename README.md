@@ -7,9 +7,9 @@
 3. At every context switch, the process at the head of the highest priority queueis chosen for execution
 
 
-4 After each quantum, (which is set to 0.1s) the currently running process is context switched out.
-5 What happens to the process after context switch?
-  The scheduler removes the process from the head of its original queue
-  adjusts its priority (if needed)
-  places it at the end of the queue that it belongs to
+4. After each quantum, (which is set to 0.1s) the currently running process is context switched out.
+5. What happens to the process after context switch?
+    >>The scheduler removes the process from the head of its original queue
+    >>adjusts its priority (if needed)
+    >>places it at the end of the queue that it belongs to
 6. The run queues are then rescanned for the highest priority queue that contains a runnable process.
